@@ -69,6 +69,12 @@ with connection.cursor() as cursor:
         # tut budet tvoi kod
         pass
 
+    cursor.execute("SELECT * FROM users")
+    rows = cursor.fetchall()
+    for row in rows:
+        # tut budet tvoi kod
+        pass
+
 
 
     #query = "INSERT INTO terminals (ID_Terminal, ID_Team, Lots_buy, Lots_sell, Floating_PL, Name) VALUES (NULL, %d, %f, %f, %f, %s)"
